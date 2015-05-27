@@ -1,5 +1,6 @@
-[![Circle CI](https://circleci.com/gh/meteorhacks/meteord/tree/master.svg?style=svg)](https://circleci.com/gh/meteorhacks/meteord/tree/master)
-## MeteorD - Docker Runtime for Meteor Apps 
+## This is a fork of meteorhacks/meteord to include graphicsmagick in the base build
+
+## MeteorD - Docker Runtime for Meteor Apps
 
 There are two main ways you can use Docker with Meteor apps. They are:
 
@@ -10,7 +11,7 @@ There are two main ways you can use Docker with Meteor apps. They are:
 
 ### 1. Build a Docker image for your app
 
-With this method, your app will be converted into a Docker image. Then you can simply run that image.  
+With this method, your app will be converted into a Docker image. Then you can simply run that image.
 
 For that, you can use `meteorhacks/meteord:onbuild` as your base image. Magically, that's only you've to do. Here's how to do it.
 
@@ -34,7 +35,7 @@ docker run -d \
     -e MONGO_URL=mongodb://url \
     -e MONGO_OPLOG_URL=mongodb://oplog_url \
     -p 8080:80 \
-    yourname/app 
+    yourname/app
 ~~~
 Then you can access your app from the port 8080 of the host system.
 

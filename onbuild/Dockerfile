@@ -1,5 +1,5 @@
 FROM meteorhacks/meteord:base
-MAINTAINER MeteorHacks Pvt Ltd.
+MAINTAINER Olivers De Abreu
 
 ONBUILD COPY ./ /app
 ONBUILD RUN bash $METEORD_DIR/on_build.sh
